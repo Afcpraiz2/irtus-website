@@ -20,7 +20,7 @@ import {
   Download
 } from 'lucide-react';
 
-const apiKey = ""; // Environment handles this
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY || "";
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
